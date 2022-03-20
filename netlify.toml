@@ -4,9 +4,4 @@
 [context.production]
   command = "npm run build"
   [context.production.environment]
-    HTTPS = true
     PRODUCTION = true
-  # Deploys from master branch run this plugin in the build.
-  # Plugins context requires double brackets.
-  [[context.production.plugins]]
-    package = "@netlify/plugin-sitemap"
